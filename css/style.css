@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quando", serif;
+}
+body {
+  min-height: 100vh;
+  background-color: #fff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.order__left {
+  /* order: 1; */
+  padding: 50px 20px 50px 100px;
+}
+.order__right {
+  order: 2;
+}
+.centered {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.no__overflow {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.form {
+  max-width: 500px;
+}
+
+.circle {
+  height: 75px;
+  width: 75px;
+  background-color: #fc4d4a;
+  border-radius: 50%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+}
+
+/* .ic-center {
+  width: 50px;
+  height: 50px;
+} */
+
+.logo {
+  width: 100px;
+  height: 100px;
+  left: 0;
+}
+
+.bg {
+  position: relative;
+}
+
+.avatar {
+  width: 85vw;
+  height: 85vh;
+  align-item: flex-end;
+  position: absolute;
+}
+
+.btn-web {
+  border: 5px solid #e15858;
+  border-radius: 30px;
+  padding: 10px;
+  width: 11cm;
+  color: #e15858;
+}
+
+.btn-menu {
+  border: none;
+}
+
+.klas {
+  width: auto;
+  font-size: 10px;
+}
+
+h4 {
+  color: #867992;
+  text-align: left;
+  margin-bottom: 30px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+
+.img {
+  height: 100%;
+  object-fit: cover;
+  max-width: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+  .order__left {
+    order: 2;
+    padding: 20px;
+  }
+  .order__right {
+    order: 1;
+  }
+  .centered {
+    align-items: flex-start;
+  }
+  .no__overflow {
+    align-items: flex-start;
+  }
+  h4 {
+    text-align: center;
+  }
+  .img {
+    width: 100vw;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .img {
+    width: 120%;
+  }
+}
