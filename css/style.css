@@ -69,7 +69,7 @@ body {
   width: 85vw;
   height: 85vh;
   align-item: flex-end;
-  position: absolute;
+  position: fixed;
 }
 
 .btn-web {
@@ -78,6 +78,12 @@ body {
   padding: 10px;
   width: 11cm;
   color: #e15858;
+}
+
+.btn-light:hover {
+  color: #e15858;
+  background-color: #ffbdbd;
+  border: 5px solid #e15858;
 }
 
 .btn-menu {
@@ -103,17 +109,119 @@ h4 {
   max-width: auto;
 }
 
+.ac-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #fcffe7;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+  }
+  .centered {
+    align-items: flex-start;
+  }
+  .no__overflow {
+    align-items: flex-start;
+  }
+  h4 {
+    text-align: center;
+  }
+  .order__right {
+    display: none;
+  }
+
+  .card-menu {
+    background-color: #fcffe7;
+    border: 2px solid #e15858;
+    width: auto;
+    height: auto;
+  }
+
+  .card-second {
+    width: 227px;
+    height: 138px;
+  }
+
+  .logo,
+  .ic {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-web {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .order__left .form {
+    order: 1;
+    height: auto;
+    padding: 150px 0 50px 0;
+    width: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ac-menu {
+    display: flex;
+  }
+
+  .web-menu {
+    display: none;
+  }
+
+  .ic {
+    width: 40px;
+    height: 40px;
+  }
+
+  .list-group {
+    font-size: 12px;
+  }
+
+  .accordion {
+    --bs-accordion-active-bg: #fcffe7;
+    --bs-accordion-bg: #fcffe7;
+    --bs-accordion-btn-focus-border-color: #e15858;
+    --bs-accordion-active-color: black;
+    --bs-accordion-border-color: none;
+    --bs-accordion-btn-focus-border-color: #ffbdbd;
+
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .list-group {
+    --bs-list-group-bg: transparent;
+    --bs-list-group-action-hover-bg: #ecf0d5;
+    --bs-list-group-border-color: #ffbdbd;
+  }
+  .first-menu {
+  }
+  /* .img {
+    width: 100vw;
+  } */
+}
+
 @media only screen and (max-width: 800px) {
   .grid {
     grid-template-columns: auto;
   }
-  .order__left {
-    order: 2;
-    padding: 20px;
-  }
-  .order__right {
+  .justify-content-sm-evenly .order__left {
     order: 1;
+    padding: none;
   }
+  /* .order__right {
+    order: 1;
+  } */
   .centered {
     align-items: flex-start;
   }
@@ -127,8 +235,9 @@ h4 {
     width: 100vw;
   }
 }
-@media only screen and (max-height: 600px) {
+
+/* @media only screen and (max-height: 600px) {
   .img {
     width: 120%;
   }
-}
+} */
