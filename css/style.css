@@ -142,8 +142,8 @@ h4 {
   }
 
   .card-second {
-    width: 227px;
-    height: 138px;
+    width: 232px;
+    height: 108px;
   }
 
   .logo,
@@ -184,19 +184,32 @@ h4 {
     height: 40px;
   }
 
+  .ic-btn {
+    width: 50px;
+    height: 50px;
+  }
+
   .list-group {
     font-size: 12px;
+  }
+
+  .p-title {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .accordion {
     --bs-accordion-active-bg: #fcffe7;
     --bs-accordion-bg: #fcffe7;
     --bs-accordion-btn-focus-border-color: #e15858;
+    --bs-accordion-border-width: 2px;
     --bs-accordion-active-color: black;
-    --bs-accordion-border-color: none;
+    --bs-accordion-border-color: #e15858;
     --bs-accordion-btn-focus-border-color: #ffbdbd;
-
-    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon: none;
+    --bs-accordion-btn-active-icon: none;
+    --bs-accordion-btn-padding-y: 1.5rem;
   }
 
   .list-group {
@@ -204,6 +217,13 @@ h4 {
     --bs-list-group-action-hover-bg: #ecf0d5;
     --bs-list-group-border-color: #ffbdbd;
   }
+
+.btn{
+  --bs-btn-padding-x: none;
+  --bs-btn-padding-y: none;
+  --bs-btn-border-width: none'
+}
+
   .first-menu {
   }
   /* .img {
